@@ -7,6 +7,7 @@
 #include "sunday.h"
 #include <windows.h>
 #include "matrix.hpp"
+#include "major.hpp"
 using namespace std;
 int n;
 void func ( const int& value )
@@ -56,12 +57,12 @@ int main( int, char** )
 //         cout << endl;
 //     }
 
-    DWORD nt = GetTickCount();
-    for ( int i = 0; i < 94; i++ )
-    {
-        cout << Fibonacci( i ) << '\t';
-    }
-    cout << GetTickCount() - nt << endl;
+//     DWORD nt = GetTickCount();
+//     for ( int i = 0; i < 94; i++ )
+//     {
+//         cout << Fibonacci( i ) << '\t';
+//     }
+//     cout << GetTickCount() - nt << endl;
 
 //     DWORD n = GetTickCount();
 //     for ( int i = 0; i < 94; i++ )
@@ -86,6 +87,18 @@ int main( int, char** )
 // 
 // 
 //     cout << GetTickCount( ) - n << endl;
+
+
+    vector<int> vt;
+    for ( int i = 0; i < 10; i++ )
+    {
+        vt.push_back( i );
+        vt.push_back( 5 );
+    }
+    cout<<Major( vt.begin(), vt.end() )<<endl;
+
+    int p[10] = { 3, 3, 3, 3, 3, 1, 1, 1, 1, 1 };
+    cout << Major_third( p, p + 10 ) << endl;
     system( "pause" );
 	return 0;
 }
