@@ -72,6 +72,7 @@
     <ClCompile Include="sunday.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="matrix.hpp" />
     <ClInclude Include="sunday.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
